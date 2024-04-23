@@ -1,0 +1,108 @@
+body {
+    background-color: #121212;
+    color: #fff;
+}
+
+.container {
+    padding: 30px;
+    width: 100%;
+}
+
+h1 {
+    color: #1DB954;
+}
+
+#music-player {
+    background-color: #212121;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+#playlist li {
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 8px 0;
+    background-color: transparent ;
+}
+
+#playlist li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Soft white background */
+}
+
+
+.control-btn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: #1DB954;
+    border: none;
+    color: #fff;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-btn:hover {
+    background-color: #1ED760;
+    color: #fff;
+}
+
+.active {
+    //background-color: #404040 !important;
+    color: #1DB954 !important;
+    font-weight: bold  !important;
+}
+
+.timeline-container {
+    position: relative;
+    height: 5px;
+    background-color: #303030;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.timer-container{
+    position: relative;
+    align-items: flex-end;
+}
+
+
+.timeline {
+    position: absolute;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.timer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    width: 0;
+    z-index: 2;
+}
+
+.digital-timer {
+    color: #fff; /* Adjust text color as needed */
+    z-index: 3;
+    position: fixed;
+    margin-left: -520px;
+    margin-bottom: 10px;
+
+}
+
+.total-time{
+  
+   
+}
